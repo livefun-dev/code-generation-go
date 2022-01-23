@@ -8,7 +8,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
-//go:generate go run cmd/generator/main.go
+//go:generate go run ../cmd/generator/main.go
 
 func recordMetrics() {
 	go func() {

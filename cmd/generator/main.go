@@ -14,6 +14,7 @@ import (
 func main() {
 	packageName := os.Getenv("GOPACKAGE")
 	fileName := os.Getenv("GOFILE")
+	fmt.Printf("file: %v\n", fileName)
 
 	file, err := os.Open(fileName)
 	if err != nil {
